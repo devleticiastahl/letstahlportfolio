@@ -332,7 +332,7 @@ nav ul li a:hover::after {
 
 .carousel-track {
     display: flex;
-    animation: scroll 50s linear infinite;
+    animation: scroll 60s linear infinite;
     width: max-content;
     transform: translateX(0);
 }
