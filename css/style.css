@@ -332,8 +332,10 @@ nav ul li a:hover::after {
 
 .carousel-track {
     display: flex;
-    animation: scroll 20s linear infinite;
+    animation: scroll 30s linear infinite;
     width: max-content;
+    /* Ajuste para garantir que o carrossel comece já preenchido */
+    transform: translateX(0);
 }
 
 .carousel-item {
@@ -347,16 +349,7 @@ nav ul li a:hover::after {
     gap: 10px;
 }
 
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
-/* Efeitos de fade nas bordas para transição suave */
+/* Efeito de fade nas bordas para transição suave */
 .tools-carousel::before {
     content: '';
     position: absolute;
@@ -366,6 +359,28 @@ nav ul li a:hover::after {
     height: 100%;
     background: linear-gradient(to right, var(--purple), transparent);
     z-index: 2;
+}
+
+.tools-carousel::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(to left, var(--purple), transparent);
+    z-index: 2;
+}
+
+/* Animação de rolagem infinita */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* Ajuste para rolar até o final da primeira duplicação */
+        transform: translateX(-50%);
+    }
 }
 
 .tools-carousel::after {
