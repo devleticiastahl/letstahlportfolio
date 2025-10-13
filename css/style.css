@@ -332,9 +332,8 @@ nav ul li a:hover::after {
 
 .carousel-track {
     display: flex;
-    animation: scroll 30s linear infinite;
+    animation: scroll 50s linear infinite;
     width: max-content;
-    /* Ajuste para garantir que o carrossel comece já preenchido */
     transform: translateX(0);
 }
 
