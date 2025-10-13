@@ -332,7 +332,8 @@ nav ul li a:hover::after {
 
 .carousel-track {
     display: flex;
-    animation: scroll 30s linear infinite;
+    animation: scroll 20s linear infinite;
+    width: max-content;
 }
 
 .carousel-item {
@@ -353,6 +354,29 @@ nav ul li a:hover::after {
     100% {
         transform: translateX(-50%);
     }
+}
+
+/* Efeitos de fade nas bordas para transição suave */
+.tools-carousel::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(to right, var(--purple), transparent);
+    z-index: 2;
+}
+
+.tools-carousel::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(to left, var(--purple), transparent);
+    z-index: 2;
 }
 
 /* Seção Sobre */
