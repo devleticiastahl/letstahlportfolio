@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letícia Stahl - Business Intelligence & Data Analysis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/particles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Header -->
+    <header id="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Letícia Stahl</div>
+                
+                <div class="nav-right">
+                    <nav>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Me</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <!-- Language Selector -->
+                    <div class="language-selector">
+                        <button class="language-btn" id="languageBtn">
+                            <span class="flag-icon">🇺🇸</span> EN
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="language-dropdown" id="languageDropdown">
+                            <div class="language-option" data-lang="pt" data-link="index.html">
+                                <span class="flag-icon">🇧🇷</span> Português
+                            </div>
+                            <div class="language-option" data-lang="es">
+                                <span class="flag-icon">🇪🇸</span> Español
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Transforming data into <span class="accent">strategic decisions</span></h1>
+                    <p>Combining theory, intuitive design, and storytelling to create Business Intelligence solutions that truly make a difference in business.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i>
+                            View Projects
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-paper-plane"></i>
+                            Get In Touch
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/images/hero-illustration.svg" alt="Letícia Stahl" class="hero-illustration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Carousel -->
+    <div class="tools-carousel">
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <div class="carousel-item">Excel</div>
+                <div class="carousel-item">PowerPoint</div>
+                <div class="carousel-item">Power BI</div>
+                <div class="carousel-item">SQL</div>
+                <div class="carousel-item">Python</div>
+                <div class="carousel-item">Figma</div>
+                <div class="carousel-item">HTML</div>
+                <div class="carousel-item">CSS</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+            </div>
+            
+            <div class="about-text">
+                <p class="reveal">My journey started in IT, where I developed fundamental skills in logic, programming, and web development. Throughout my career, I've worked in administrative and international sales sectors, experiences that allowed me to combine technology with corporate demands and collaborate with multicultural teams.</p>
+                
+                <p class="reveal">Today, my purpose is to transform data into accessible decisions, helping managers and employees clearly see the essential information for their daily business operations.</p>
+            </div>
+
+            <div class="services">
+                <div class="services-list">
+                    <div class="service-item reveal">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <span class="service-name">Clear and intuitive dashboards</span>
+                    </div>
+                    <div class="service-item reveal">
+                        <div class="service-icon">
+                            <i class="fas fa-file-excel"></i>
+                        </div>
+                        <span class="service-name">Administrative spreadsheets</span>
+                    </div>
+                    <div class="service-item reveal">
+                        <div class="service-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <span class="service-name">Reports and Management Presentations</span>
+                    </div>
+                    <div class="service-item reveal">
+                        <div class="service-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <span class="service-name">Data analysis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-commerce Dashboard</h3>
+                        <p class="project-description">Dashboard that not only shows numbers but tells the story of customer behavior, product performance, and growth opportunities. Developed with focus on end-user experience.</p>
+                        <div class="project-tags">
+                            <span class="tag">Power BI</span>
+                            <span class="tag">UX Design</span>
+                            <span class="tag">Descriptive Analysis</span>
+                            <span class="tag">Storytelling</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project Details
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sales Predictive Model</h3>
+                        <p class="project-description">Solution that combines machine learning with intuitive visualizations to predict trends and identify opportunities. Focused on delivering actionable insights for sales teams.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Visualization</span>
+                            <span class="tag">Predictive Analysis</span>
+                        </div>
+                        <div class="construction">
+                            <i class="fas fa-tools"></i>
+                            Under Construction
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Comparative Analysis of Supervised Algorithms for Credit Card Fraud Detection in Big Data Environments with Databricks</h3>
+                        <p class="project-description">Comparative study between supervised learning algorithms applied to credit card fraud detection, using the distributed Databricks environment for processing large data volumes with scalability and performance.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Databricks</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Big Data</span>
+                            <span class="tag">Fraud</span>
+                        </div>
+                        <div class="construction">
+                            <i class="fas fa-tools"></i>
+                            Under Construction
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Create Together</h2>
+                <p class="section-subtitle">Ready to transform your data into stories that drive decisions?</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item reveal">
+                        <a href="mailto:leticia@exemplo.com" class="contact-link">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Email</h3>
+                            <p>leticia@exemplo.com</p>
+                        </a>
+                    </div>
+                    <div class="contact-item reveal">
+                        <a href="https://linkedin.com/in/leticiastahl" target="_blank" class="contact-link">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <h3>LinkedIn</h3>
+                            <p>linkedin.com/in/leticiastahl</p>
+                        </a>
+                    </div>
+                    <div class="contact-item reveal">
+                        <a href="https://github.com/leticiastahl" target="_blank" class="contact-link">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <h3>GitHub</h3>
+                            <p>github.com/leticiastahl</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Letícia Stahl</div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About Me</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Letícia Stahl. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/particles-config.js"></script>
+    <script src="js/language-switcher.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
