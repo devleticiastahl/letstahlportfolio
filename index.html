@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letícia Stahl - Business Intelligence & Data Analysis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/particles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Cursor personalizado -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Cabeçalho -->
+    <header id="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Letícia Stahl</div>
+                
+                <div class="nav-right">
+                    <nav>
+                        <ul>
+                            <li><a href="#home">Início</a></li>
+                            <li><a href="#about">Sobre Mim</a></li>
+                            <li><a href="#projects">Projetos</a></li>
+                            <li><a href="#contact">Contato</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <!-- Seletor de Idiomas -->
+                    <div class="language-selector">
+                        <button class="language-btn" id="languageBtn">
+                            <span class="flag-icon">🇧🇷</span> PT-BR
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="language-dropdown" id="languageDropdown">
+                            <div class="language-option" data-lang="en" data-link="en.html">
+                                <span class="flag-icon">🇺🇸</span> English
+                            </div>
+                            <div class="language-option" data-lang="es">
+                                <span class="flag-icon">🇪🇸</span> Español
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção Hero -->
+    <section id="home" class="hero">
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Transformando dados em <span class="accent">decisões estratégicas</span></h1>
+                    <p>Unindo teoria, design intuitivo e storytelling para criar soluções de Business Intelligence que realmente fazem a diferença nos negócios.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i>
+                            Ver Projetos
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-paper-plane"></i>
+                            Entrar em Contato
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/images/hero-illustration.svg" alt="Letícia Stahl" class="hero-illustration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrossel de Ferramentas -->
+    <div class="tools-carousel">
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <div class="carousel-item">Excel</div>
+                <div class="carousel-item">PowerPoint</div>
+                <div class="carousel-item">Power BI</div>
+                <div class="carousel-item">SQL</div>
+                <div class="carousel-item">Python</div>
+                <div class="carousel-item">Figma</div>
+                <div class="carousel-item">HTML</div>
+                <div class="carousel-item">CSS</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção Sobre -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre Mim</h2>
+            </div>
+            
+            <div class="about-text">
+                <p class="reveal">Minha trajetória começou na área de informática, onde desenvolvi habilidades fundamentais em lógica, programação e desenvolvimento web. Ao longo da minha carreira, atuei nos setores administrativos e de vendas internacionais, experiências que me permitiram unir tecnologia às demandas do ambiente corporativo e colaborar com equipes multiculturais.</p>
+                
+                <p class="reveal">Hoje, meu propósito é transformar dados em decisões acessíveis, ajudando gestores e colaboradores a enxergarem com clareza as informações essenciais para o dia a dia da empresa.</p>
+            </div>
+
+            <div class="services">
+                <div class="services-list">
+                    <div class="service-item reveal">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <span class="service-name">Dashboards claros e intuitivos</span>
+                    </div>
+                    <div class="service-item reveal">
+                        <div class="service-icon">
+                            <i class="fas fa-file-excel"></i>
+                        </div>
+                        <span class="service-name">Planilhas administrativas</span>
+                    </div>
+                    <div class="service-item reveal">
+                        <div class="service-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <span class="service-name">Relatórios e Apresentações Gerenciais</span>
+                    </div>
+                    <div class="service-item reveal">
+                        <div class="service-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <span class="service-name">Análise de dados</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projetos em Destaque</h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Projeto 1 -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Dashboard de E-commerce</h3>
+                        <p class="project-description">Dashboard que não apenas mostra números, mas conta a história do comportamento do cliente, performance de produtos e oportunidades de crescimento. Desenvolvido com foco na experiência do usuário final.</p>
+                        <div class="project-tags">
+                            <span class="tag">Power BI</span>
+                            <span class="tag">UX Design</span>
+                            <span class="tag">Análise Descritiva</span>
+                            <span class="tag">Storytelling</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">
+                            <i class="fas fa-external-link-alt"></i>
+                            Ver Detalhes do Projeto
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Projeto 2 -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Modelo Preditivo de Vendas</h3>
+                        <p class="project-description">Solução que combina machine learning com visualizações intuitivas para prever tendências e identificar oportunidades. Focado em entregar insights acionáveis para equipes comerciais.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Visualização</span>
+                            <span class="tag">Análise Preditiva</span>
+                        </div>
+                        <div class="construction">
+                            <i class="fas fa-tools"></i>
+                            Em Construção
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 3 -->
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Análise comparativa de algoritmos supervisionados para detecção de fraude de cartão de crédito em ambientes de Big Data com Databricks</h3>
+                        <p class="project-description">Estudo comparativo entre algoritmos de aprendizado supervisionado aplicados à detecção de fraudes em transações de cartão de crédito, utilizando o ambiente distribuído Databricks para processamento de grandes volumes de dados com escalabilidade e desempenho.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Databricks</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Big Data</span>
+                            <span class="tag">Fraude</span>
+                        </div>
+                        <div class="construction">
+                            <i class="fas fa-tools"></i>
+                            Em Construção
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Vamos Criar Juntos</h2>
+                <p class="section-subtitle">Pronto para transformar seus dados em histórias que impulsionam decisões?</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item reveal">
+                        <a href="mailto:leticia@exemplo.com" class="contact-link">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Email</h3>
+                            <p>leticia@exemplo.com</p>
+                        </a>
+                    </div>
+                    <div class="contact-item reveal">
+                        <a href="https://linkedin.com/in/leticiastahl" target="_blank" class="contact-link">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <h3>LinkedIn</h3>
+                            <p>linkedin.com/in/leticiastahl</p>
+                        </a>
+                    </div>
+                    <div class="contact-item reveal">
+                        <a href="https://github.com/leticiastahl" target="_blank" class="contact-link">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <h3>GitHub</h3>
+                            <p>github.com/leticiastahl</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Letícia Stahl</div>
+                <div class="footer-links">
+                    <a href="#home">Início</a>
+                    <a href="#about">Sobre Mim</a>
+                    <a href="#projects">Projetos</a>
+                    <a href="#contact">Contato</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Letícia Stahl. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/particles-config.js"></script>
+    <script src="js/language-switcher.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
